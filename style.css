@@ -1,0 +1,145 @@
+#player-select {
+    min-width: inherit;
+    min-height: inherit;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main-container{
+    margin: auto;
+}
+#top-container{
+    display: flex;
+    min-height: 21rem;
+    margin: 1rem 1rem 1rem 1rem;
+    overflow: scroll;
+}
+
+#bottom-container-1{
+    display: flex;
+   
+    overflow: scroll;
+    background-color: #f1f1f1b5; 
+    margin: 1rem 1rem 1rem 1rem;
+    border-width: 2px 0px 0px 2px;
+    box-shadow: 10px 5px 5px #cccccc;
+}
+
+#bottom-container-2{
+    display: flex;
+   
+    overflow: scroll;
+    background-color: #f1f1f1b5; 
+    max-height: 28rem;
+    margin: 1rem 1rem 1rem 1rem;
+    border-width: 2px 0px 0px 2px;
+    box-shadow: 10px 5px 5px #cccccc;
+}
+
+#bottom-container-3{
+    overflow: scroll;
+    background-color: #f1f1f1b5; 
+    max-height: 28rem;
+    margin: 1rem 1rem 1rem 1rem;
+    border-width: 2px 0px 0px 2px;
+    box-shadow: 10px 5px 5px #cccccc;
+}
+
+tbody td {
+    text-align: center;
+  }
+
+  #season-table-container{
+    overflow-y: scroll;
+    max-height: 12rem;
+  }
+
+  
+table#bottom-table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 1rem;
+}
+
+table#top-table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 1rem;
+}
+
+.header-style{
+    letter-spacing: 3px;
+    font-family: system-ui;
+    width: 145px;
+    position: sticky;
+    top: 0;
+    background-color: black; 
+    color: white;
+}
+
+.player-img{
+    min-width:30rem;
+    background-color: #f1f1f1b5; 
+    margin: 1rem 3rem 1rem 1rem;
+    border-radius: 1rem;
+    border-width: 2px 0px 0px 2px;
+    box-shadow: 10px 5px 5px #cccccc;
+}
+
+
+
+body {
+    min-height: 100vh;
+    min-width: 75%;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.player-img img {
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+
+div.playerLabel{
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: system-ui;
+}
+tr{
+    border:1px solid black; 
+}
+.compareCell{
+    color: white;
+    background-color: #3880ff; 
+}
+
+.btns-container{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btns-container button {
+    width: 5rem;
+    height: 2rem;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 10px 5px 5px #cccccc;
+}
+
+.btns-container button:hover{
+    cursor: pointer;
+    background-color: #92949c;
+}
+
+.btns-container button.clicked-stat{
+    background-color: #92949c;
+}
+
+.btns-container button.clicked-compare{
+    background-color: #92949c;
+}
