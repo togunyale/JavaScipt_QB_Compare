@@ -1,9 +1,18 @@
 var qbSeleted = null;
 const qbMap = new Map();
+Promise.all([getTempToken()]).then(
+    response => {
+        tempToken = response[0].token;
+        aggregrateGameAndPlayerData().then(response =>{
+        createPlayerCards()
+        });
+    }
+);
 
-aggregrateGameAndPlayerData().then(response =>{
+
+function createPlayerCards(){
     var playerImgDiv = document.getElementById("top-container");
-   
+
     QBs.forEach(qb => {
         let playerCard = document.createElement("div");
         let playerLabel = document.createElement("div");
@@ -33,7 +42,7 @@ aggregrateGameAndPlayerData().then(response =>{
         playerImgDiv.appendChild(playerCard);
        
     });
-});
+}
 
 
 
