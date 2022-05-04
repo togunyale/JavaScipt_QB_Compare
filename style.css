@@ -20,8 +20,7 @@
 }
 
 #bottom-container-1{
-    display: flex;
-   
+    display: inherit;
     overflow: scroll;
     background-color: #f1f1f1b5; 
     margin: 1rem 1rem 1rem 1rem;
