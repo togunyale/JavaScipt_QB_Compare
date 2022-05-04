@@ -1,5 +1,12 @@
 var QBs = [];
-var tempToken = '809fd3cb-66d0-4d70-9b98-ce11a14f0819'
+var apiToken = 'fa718609-36e0-4593-b802-55d9d278b2b5';
+var tempToken = '';
+
+async function getTempToken(){
+    const token = await fetch('https://project.trumedianetworks.com/api/token',{
+        method:"GET",headers:{"apiKey": apiToken}});
+    return await token.json();
+}
 
 async function getPlayers(){
     const players = await fetch('https://project.trumedianetworks.com/api/nfl/players',{
